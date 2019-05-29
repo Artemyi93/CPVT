@@ -27,12 +27,12 @@ public class Steps {
 
     @Допустим("поле \"Логин\" заполнено значением {string}")
     public void EnterLogin(String login) {
-        startPage.EnterLogin(login);
+        startPage.enterLogin(login);
     }
 
     @Допустим("поле \"Пароль\" заполнено значением {string}")
     public void EnterPwd(String pwd) {
-        startPage.EnterPassword(pwd);
+        startPage.enterPassword(pwd);
     }
 
     @Допустим("нажата кнопка \"Войти\"")

@@ -17,23 +17,23 @@ public class StartCPVTPage {
     private WebElement inputPassword;
 
     @FindBy(xpath = "//span[starts-with(@class,'ui-button-text') and text()='Войти']")
-    private WebElement EnterButton;
+    private WebElement enterButton;
 
     public StartCPVTPage (WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
 
-    public void EnterLogin(String user){
+    public void enterLogin(String user){
         inputUser.sendKeys(user);
     }
 
-    public void EnterPassword(String pwd){
+    public void enterPassword(String pwd){
         inputPassword.sendKeys(pwd);
     }
 
     public CPVT_MainPage clickOnEnterButton() {
-        EnterButton.click();
+        enterButton.click();
         return new CPVT_MainPage(driver);
     }
 }

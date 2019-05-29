@@ -1,11 +1,9 @@
 package tests;
 
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
 import cucumber.api.java.ru.*;
 import cucumber.api.junit.Cucumber;
-import org.junit.*;
 import org.junit.runner.RunWith;
 
 
